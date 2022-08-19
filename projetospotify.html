@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify</title>
+        <link rel="icon" type="imagem/png" href="./logo.png"> <!---ícone da página--->
+        
+     </head>
+<body>
+    <nav> <!---Barra de navegação--->
+        <ul>
+            <li class="brand"><img src="https://logospng.org/download/spotify/logo-spotify-icon-2048.png" alt="Spotify"> Spotify</li>
+            <a href="https://open.spotify.com/" target="_blank"><li><img src="./images/home.png" height="20" alt="Ícone casa"> Home</li></a>
+            <a href="https://open.spotify.com/search" target="_blank"> <li ><img src="./images/search.png" height="21" alt="Buscar"> Buscar</li> </a>
+           <a href="https://open.spotify.com/collection/tracks" target="_blank"> <li> <img src="./images/heart.png" height="20" alt="Curtidas"> Curtidas </li></a>
+          <a href="https://open.spotify.com/playlist/5e76foNvcMtshbZMVGQPcw" target="_blank">  <li> <img src="./images/playlist.png" height="20" alt="Nova Playlist"> Nova Playlist </li></a>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Minha PlayList | Alexandre </h1>
+            <div class="songItemContainer"> <!---Música aqui--->
+               
+                <div class="songItem">
+                    <img src="./images/marshmello.jpg">
+                    <span class="songName"> Alone  <br> Marshmello </span>
+                    <span class="songlistplay">
+                    <a href="https://open.spotify.com/track/3MEYFivt6bilQ9q9mFWZ4g?si=5ea67bf5af664412" target="_blank">
+                       <button class="but">></button>
+                      
+                    </a> 
+                  
+                </div> 
+
+                <div class="songItem">
+                    <img src="./images/alok.png">
+                    <span class="songName"> Alive  <br> Alok</span>
+                    <span class="songlistplay">
+                    <a href="https://open.spotify.com/track/4zzHe0vVVQwLwn1mAoKFJq?si=259c364caea541ce" target="_blank">
+                       <button class="but">></button>
+                    </a>    
+                </div>  
+
+                <div class="songItem">
+                    <img src="./images/postmalone.jpg">
+                    <span class="songName"> Sunflower <br> Post Malone </span>
+                    <span class="songlistplay">
+                    <a href="https://open.spotify.com/track/3KkXRkHbMCARz0aVfEt68P?si=6e134e31a4e54320" target="_blank">
+                       <button class="but">></button>
+                    </a>     
+                </div>  
+
+                <div class="songItem">
+                    <img src="./images/jovemdionisio.jpeg">
+                    <span class="songName"> Acorda Pedrinho  <br> Jovem Dionísio </span>
+                    <span class="songlistplay">
+                    <a href="https://open.spotify.com/track/2sUhjzuc6w4SRFwoC3LvXZ?si=ca943395fd2e4ee5" target="_blank">
+                       <button class="but">></button>
+                    </a>                    
+                  
+                </div>  
+                <div class="songItem">
+                    <img src="./images/7minutoz.jpg">
+                    <span class="songName"> Rap da Akatsuki <br> 7 Minutoz</span>
+                    <span class="songlistplay">
+                    <a href="https://open.spotify.com/track/2iNZMMFEii4fU827NTyQ1J?si=b3d90e58adcf40b0" target="_blank">
+                       <button class="but">></button>
+                    </a>                                      
+                </div> 
+                
+            </div>
+        </div>       
+        <div class="songBanner"></div>   
+    </div>
+
+
+</body>
+</html>
+
+
+
+<!-- Estilo -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.but{
+    background-color:darkgreen;
+    margin: 50px;
+    border-color:darkgreen;
+    width: 50px;
+    height: 30px;
+    color:bisque;
+    border-radius: 50px;
+}
+nav{
+    font-family: 'Varela Round', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 60px;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li{
+    padding: 0 10px;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 23px auto;
+   width: 100%;
+   padding: 34px;
+
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    position: relative;
+}
+
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 25px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp a{
+    margin: 0 50px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: black;
+    }
+}
+
+@media (max-width:900px){
+  .songItem{
+        width: 80%;
+    }
+    .songItemContainer{
+        width: 100%;
+    }
+    .songItem i{
+        margin-left: 100px;
+        margin-bottom: 28px;
+    }
+
+    .bottom input{
+        margin:35px;
+        text-align: center;
+    }
+
+    .songItem{
+        height: 55px;
+        display: flex;
+        background-color: white;
+        font-size: 15px;
+        
+        color: black;
+        margin: 12px 0;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 34px;
+    }
+
+    h1{
+        text-align: center;
+        margin-right: 100px;
+    }
+
+}
+</style>
